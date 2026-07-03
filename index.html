@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC - Our Menu</title>
+
+    <!-- Bootstrap 3.3 CSS (framework only - all custom styling is in css/style.css) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Our external stylesheet -->
+    <link rel="stylesheet" href="C:\Users\Mihir\OneDrive\Desktop\module3-solution/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================
+         NAVBAR
+         navbar-default (NOT navbar-fixed-top) so it scrolls away
+         with the rest of the page.
+         ========================================================== -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <!-- Mobile toggle button (3 horizontal bars).
+                     Bootstrap only shows this button once the viewport
+                     drops to the xs/sm breakpoint. -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Company name, aligned left via navbar-brand -->
+                <a class="navbar-brand" href="#top">Food, LLC</a>
+            </div>
+
+            <!-- Collapsible mobile dropdown menu. On desktop/tablet
+                 this stays collapsed/hidden since there is nothing
+                 else in the navbar for those views. -->
+            <div class="collapse navbar-collapse" id="mainNavCollapse">
+                <ul class="nav navbar-nav mobile-menu visible-xs">
+                    <li><a class="text-center" href="#chicken">Chicken</a></li>
+                    <li><a class="text-center" href="#beef">Beef</a></li>
+                    <li><a class="text-center" href="#sushi">Sushi</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <a id="top"></a>
+
+    <div class="container-fluid">
+
+        <!-- Page heading, centered with Bootstrap's text-center class -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center page-heading">Our Menu</h1>
+            </div>
+        </div>
+
+        <!-- ==========================================================
+             REQUIRED: single, really tall section using the Bootstrap
+             Grid (col-xs-12), tall enough to force scrolling.
+             ========================================================== -->
+        <div class="row">
+            <div class="col-xs-12 tall-section">
+                <p>Welcome to Food, LLC! Browse chicken, beef, and sushi dishes below. This section is intentionally tall so the page requires scrolling on every device size.</p>
+            </div>
+        </div>
+
+        <!-- ==========================================================
+             OPTIONAL / UNGRADED: Chicken, Beef, Sushi sections
+             Desktop: 3 equal columns (col-md-4)
+             Tablet: first two in a row (col-sm-6), third full width (col-sm-12)
+             Mobile: each full width (col-xs-12)
+             ========================================================== -->
+        <div class="row">
+
+            <div id="chicken" class="col-xs-12 col-sm-6 col-md-4 menu-section">
+                <h3 class="text-center">Chicken</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="back-to-top" href="#top">Back to Top</a>
+            </div>
+
+            <div id="beef" class="col-xs-12 col-sm-6 col-md-4 menu-section">
+                <h3 class="text-center">Beef</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="back-to-top" href="#top">Back to Top</a>
+            </div>
+
+            <div id="sushi" class="col-xs-12 col-sm-12 col-md-4 menu-section">
+                <h3 class="text-center">Sushi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="back-to-top" href="#top">Back to Top</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery and Bootstrap JS (needed for the collapse/dropdown toggle) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
